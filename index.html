@@ -12,31 +12,32 @@
       font-size: 16px;
       line-height: 2;
       margin: 40px 20px;
-      max-height: 95vh;
-      overflow-y: scroll;
       background-color: #fdfcf8;
       color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    /* タイトルは横書き・中央寄せ */
+    /* タイトルも縦書き・中央寄せ */
     h1 {
-      writing-mode: horizontal-tb;
-      text-align: center;
-      font-size: 1.4em;
-      margin-bottom: 3em;
-      letter-spacing: 0.1em;
+      writing-mode: vertical-rl;
+      text-orientation: upright;  /* 縦書きで文字を立てる */
+      font-size: 20px;
+      letter-spacing: 0.15em;
+      margin-bottom: 4em; /* 本文との空間（約2行分） */
     }
 
-    /* 段落設定 */
+    /* 段落設定：段落間に空きをつくる */
     p {
       text-indent: 1em;
-      margin: 0 0 1em 0;
+      margin: 0 0 2em 0;
     }
 
-    /* ページ区切りっぽい余白 */
+    /* ページ区切り */
     .page-break {
       display: block;
-      height: 50vh; /* 半ページ分の空白 */
+      height: 50vh;
       content: "";
     }
   </style>
@@ -153,6 +154,7 @@
 <br>と。わたくしの言葉を覚えていてくださって、ユーモアもある方だったなんて最後まで知りませんでした。どちらの涙かもわからぬほどに泣きまして、それでも精一杯笑ってお送りしました。一八九八年、六四歳でございました。</p>
 
 <div class="page-break"></div>
+
 
 
 
